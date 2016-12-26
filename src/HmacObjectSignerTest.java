@@ -24,7 +24,7 @@ public class HmacObjectSignerTest {
 	}
 
 	@Test(expected = IllegalAccessError.class)
-	public void hmacMustReturnErrorIfObjectDoesntHaveAnnotation() throws Exception {
+	public void hmacMustReturnIllegalAccessErrorIfObjectDoesntHaveAnnotation() throws Exception {
 		Object emptyObject = new Object();
 		signer.generateMac("", ":", emptyObject);
 	}
