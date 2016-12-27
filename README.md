@@ -34,7 +34,7 @@ This helps to generate Hmac for an object  by adding the annotation '@MacSigned'
     ObjectHmacSigner signer = new ObjectHmacSigner();
 
     NotificationClassLevel notifyObject = new NotificationClassLevel(1L, "sd","af");
-	String testKey = "38D2ADECE6203DF2DABFA68D87C55CAE0BC030876120E0505B0C775C88323D0F";
+	String testKey = "3454454ECE6203DF2DABFA68D87C55CAE0BC030876120E0505B0C7754543344";
 	// call generateMac method with parameters [HMAC key, delimeter, object]
     s.generateMac(testKey, ":", notifyObject);
     
